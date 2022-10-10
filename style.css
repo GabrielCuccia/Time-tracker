@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-dark-blue);
+    color: var(--Pale-Blue);
+}
+.main-container{
+    
+    
+    width: 328px;
+    margin:  77px auto;
+    position: relative;
+}
+
+.main-card__user{
+    
+    background-color: var(--Blue);
+    display: flex;
+    border-radius: 16px;
+    padding: 35px 30px;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    
+
+    
+
+}
+.main-card__img{
+    width: 62px;
+    margin-right: 10px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.main-card__title{
+    margin-top: 7px;
+}
+.Jeremy{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 3px;
+    color: white;
+}
+.main-card__dates{
+    background-color: var(--Dark-blue);
+    display: flex;
+    padding:20px;
+    justify-content: space-around;
+    font-size: 1.1em;
+    border-radius: 16px;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    
+}
+.main-card__frequency{
+    margin-top: 40px;
+    padding: 0px 0px 4px 0px;
+}
+.main-card__frequency:hover{
+    color: white;
+    cursor: pointer;
+}
+.main-card__frequency--active{
+    color: white;
+}
+.second-section{
+    padding-top: 230px;
+}
+.card{
+    position: relative;
+    margin-bottom: 130px;
+}
+.card__background{
+    background-color: var(--Orange);
+    border-radius: 16px;
+    
+    overflow: hidden;
+    width: 100%;
+    
+
+}
+.card__background img{
+    margin-top: -10px;
+    padding-left: 235px;
+    
+}
+.card__details{
+    background-color: var(--Dark-blue);
+    padding: 30px;
+    border-radius: 16px;
+    position: absolute;
+    width: 100%;
+    margin-top: -36px;
+    
+}
+.card__details:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+    transition: 0.3s;
+}
+
+.card__activity{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: white;
+    font-size: 1.2em;
+}
+.card__activity img{
+    margin-top: 7px;
+    height: 5px;
+    width: auto;
+}
+.card__hours{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.card__hour{
+    font-size: 1.8em;
+    font-weight: 300;
+    color: white;
+}
+.card__previus{
+    margin-top: 8px;
+}
+
+:root{
+    
+    
+    
+    
+    --Blue: hsl(246, 80%, 60%);
+
+    --Orange: hsl(15, 100%, 70%);
+    --Soft-blue : hsl(195, 74%, 62%);
+    --Light-red : hsl(348, 100%, 68%);
+    --Lime-green : hsl(145, 58%, 55%);
+    --Violet : hsl(264, 64%, 52%);
+    --Soft-orange : hsl(43, 84%, 65%);
+    
+    
+    
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    
+}
+.attribution { font-size: 14px; text-align: center;
+padding-bottom: 5px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:1200px){
+    
+    .main-container{
+        width: 1150px;
+        display: flex;
+        
+    }
+    .first-section{
+        height: 564px;
+        width: 290px;
+        position: relative;
+    }
+    .second-section{
+        display: grid;
+        height: 564px;
+        width: 800px;
+        padding-top: 0%;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px;
+        padding-left: 30px;
+        
+    }
+    .card{
+       width: 240px;
+       height: 244px;
+       
+       margin-bottom: 30px;
+
+    }
+    .main-card__user{
+        height: 350px;
+        flex-direction: column;
+    }
+    .main-card__title{
+        padding-top: 30px;
+    }
+    .main-card__img{
+        width: 80px;
+    }
+    .Jeremy{
+        font-size: 2.4em;
+    }
+    .main-card__dates{
+        top: 340px;
+        flex-direction: column;
+        padding: 13px;
+        
+    }
+    .card__details{
+        height: 190px;
+        margin-top: -29px;
+       
+    }
+    .card__hours{
+        flex-direction: column;
+        
+    }
+    .card__hour{
+        padding-top: 20px;
+        font-size: 2.3em;
+    }
+    .card__previus{
+        font-size: 1.02em;
+        font-weight: 300;
+    }
+    .card__background img{
+        padding-left: 135px;
+    }
+    .main-card__frequency{
+       margin: 10px;
+    }
+    .margin{
+        margin-top: 24px;
+    }
+    .main-container{
+        margin-top: 120px;
+    }
+}
